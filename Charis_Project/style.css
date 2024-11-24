@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+/* Resets */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#e3e8e4;
+    --primary-color:#363663;
+    --main-font:"Playfair Display", serif;
+}
+
+/* Nav Section Start */
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    text-align:center;
+    font-family:sans-serif;
+    padding:10px;
+}
+ul li{
+    display:inline;
+    list-style:none;
+}
+ul li a{
+    text-decoration: none;
+    color:#000;
+    margin-left:4rem; 
+}
+
+ul li a:hover{
+     border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.btn-fill{
+    padding:10px 30px;
+    background-color: var(--primary-color);
+    border:none;
+    border-radius: 100px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* Nav Section Ends */
+/* Header Section Starts */
+
+.btn-outline{
+    background: transparent;
+    border:none;
+    margin-left:20px;
+    font-weight: bold;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+.content-container{
+    margin-left:6rem;
+}
+.main-headings{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color:#0000004f;
+    margin-bottom: 2rem;
+}
+
+.main-headings span{
+    color:#000;
+}
+
+.primary-headings{
+    max-width: 500px;
+    font-family: sans-serif;
+    line-height: 25px;
+    margin-bottom:2rem;
+}
+
+.img-container{
+    width: 500px;
+    height: 500px;
+    background:var(--main-color);
+    border-radius: 100%;
+}
+
+.img-container img{
+    width: 400px;
+    height: 500px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+/* Header Section Ends */
+
+/* Pupuarity Section Start */
+
+.popularity{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.popularity div{
+    margin-right: 5rem;
+}
+
+.popularity div h1{
+    font-size: 3rem;
+    text-align: center;
+    color:#202030;
+    font-family: var(--main-font);
+}
+
+.popularity div p{
+    color:#202030;
+    font-family: sans-serif;
+}
+
+/* Pupuarity Section End */
+
+/* Products Section Starts */
+
+.products-heading{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    color:#0000004f;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top:50px;
+}
+
+.product .product-img-layer{
+    background-color:var(--main-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 20px;
+}
+
+.product .product-img-layer .img{
+    width: 200px;
+    height: 200px;
+}
+
+.product .product-img-layer .img-one{
+    background:url("https://img.freepik.com/free-vector/red-plastic-chair-isolated_1284-41858.jpg?semt=ais_hybrid");
+    background-size: cover;
+    background-position: center;
+}
+.product .product-img-layer .img-two{
+    background:url("https://img.freepik.com/free-vector/white-office-chair_1053-316.jpg?semt=ais_hybrid");
+    background-size: cover;
+    background-position: center;
+}
+.product .product-img-layer .img-three{
+    background:url("https://img.freepik.com/premium-vector/black-leather-office-chair-isolated-illustration-white-background_134830-202.jpg?semt=ais_hybrid");
+    background-size: cover;
+    background-position: center;
+}
+
+.product-content{
+    background:var(--primary-color);
+    padding: 27px;
+    padding-bottom:50px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-content .product-name{
+     font-family: sans-serif;
+     margin-bottom: 10px;
+}
+
+.b-container{
+    text-align: center;
+}
+
+.b-container button{
+    border:none;
+    background:transparent;
+    font-size: 2rem;
+    cursor:pointer;
+    margin:0 auto;
+    margin-left:20px;
+    margin-top:10px; 
+}
+
+/* Products Section  Ends */
+
+/* Why Choose Us? Section Starts */
+
+.why-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 10rem;
+}
+
+.why-us .img-layer{
+    width: 400px;
+    height: 400px;
+    background:var(--main-color);
+    border-radius: 100%;
+}
+
+.why-us .img-layer .img{
+    width: 400px;
+    height: 400px;
+    background:url("https://img.freepik.com/free-vector/beige-soft-leather-armchair-with-wooden-legs_107791-29681.jpg?semt=ais_hybrid");
+    background-size: cover;
+    background-position:cover;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.card{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius:5px;
+}
+
+.card.card-fill{
+    background:#e3e8e490;
+    position: relative;
+}
+
+.card.card-fill .star{
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    border-radius:100%;
+    background:var(--primary-color);
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 15px;
+    color:#fff;
+}
+
+.card h1{
+    color:#000;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.card p{
+    color:#999;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+}
+ 
+/* Why Choose Us? Section Ends */
+
+/* features Section Start */
+
+.features{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+/* Features Section End */
+
+/* Footer Styling Starts */
+
+footer{
+    background:var(--primary-color);
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    height: 100vh;
+    color:#fff;
+}
+
+footer .logo-container h1{
+    font-size: 4rem;
+    font-family: var(--main-color);
+    margin-bottom: 20px ;
+}
+
+footer .logo-container p{
+    max-width: 400px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+footer .about-company{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+footer .about-company .container{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.about-company .container h1{
+    margin-bottom: 50px;
+}
+
+.about-company .container p{
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/* Footer Styling Ends */
+
+
+/* Responsiveness */
+
+@media only screen and (max-width:1150px){
+    .img-container{
+        width: 340px;
+        height: 340px;
+    }
+    .d-none{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:900px){
+    header{
+        height: 120vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    header .content-container{
+        margin-bottom: 6rem;
+        margin-top:4rem;
+        margin-left:4rem;
+    }
+
+    .popularity{
+        margin-top:22rem;
+        text-align: center;;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .primary-headings{
+        width: 350px;
+    }
+
+    .img-container{
+        width: 350px;
+        width: 250px;
+    }
+
+    .popularity div h1{
+        font-size: 2rem;
+    }
+
+    .Pupolarity div{
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top:7rem;
+    }
+
+    .main-headings{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    footer ul li{
+        display: block;
+    }
+}
+
+
+
+
+
+
